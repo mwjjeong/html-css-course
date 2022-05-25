@@ -127,4 +127,29 @@ a:active {
   font-style: italic;
 }
 
+/* lower priority than the other element selectors with pseudo-class */
+a {
+  color: red;
+}
 /* LVHA */
+
+/* Theory 1: Conflicting Selector */
+/* Resolving conflicts */
+/* ID selector -> higher priority */
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+/* Last Class Selector -> second priority */
+/*
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
