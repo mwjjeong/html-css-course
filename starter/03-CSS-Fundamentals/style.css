@@ -1,11 +1,15 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
+/* universal selector */
+/* apply to all the elements (not inheritance)*/
+/* * {
+  border-top: 10px solid #1098ad;
+} */
+
+/* easily override by rules of child elements */
+/* passed down to child elements withing the body */
+body {
   color: #444;
+  font-family: sans-serif;
+  /* border-top: 10px solid red; */
 }
 
 h1,
@@ -152,4 +156,13 @@ a {
 
 footer p {
   color: green !important;
+} */
+
+nav a:link {
+  font-size: 18px;
+  /* color: green; */
+}
+/*
+nav a:link {
+  font-size: 18px;
 } */
