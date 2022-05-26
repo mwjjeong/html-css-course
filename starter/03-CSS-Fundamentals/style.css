@@ -166,7 +166,10 @@ a {
   color: red;
 }
 /* LVHA */
-
+.post-img {
+  width: 100%;
+  height: auto;
+}
 /* Theory 1: Conflicting Selector */
 /* Resolving conflicts */
 /* ID selector -> higher priority */
