@@ -1,15 +1,17 @@
 /* universal selector */
 /* apply to all the elements (not inheritance)*/
-/* * {
-  border-top: 10px solid #1098ad;
-} */
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 /* easily override by rules of child elements */
 /* passed down to child elements withing the body */
 body {
   color: #444;
   font-family: sans-serif;
-  /* border-top: 10px solid red; */
+  border-top: 10px solid red;
 }
 
 h1,
@@ -26,10 +28,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -41,10 +46,16 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
+ul,
+ol {
+  margin-left: 50px;
+}
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 /* footer p {
@@ -74,20 +85,39 @@ li {
   list-style: none;
 }
 
+body {
+  /* background-color: orange; */
+}
+
 .main-header {
   background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
 }
 
 aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   background-color: #f7f7f7;
+  padding: 50px 0;
+  width: 500px;
 }
 
-body {
-  /* background-color: orange; */
+.post-header {
+  margin-bottom: 40px;
 }
-
 /* .first-li {
   font-weight: bold;
 } */
@@ -157,12 +187,12 @@ a {
 footer p {
   color: green !important;
 } */
+/* 
+nav a:link {
+  font-size: 18px;
+  color: green; 
+*/
 
 nav a:link {
   font-size: 18px;
-  /* color: green; */
 }
-/*
-nav a:link {
-  font-size: 18px;
-} */
